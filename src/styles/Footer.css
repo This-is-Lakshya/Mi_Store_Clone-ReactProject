@@ -1,0 +1,179 @@
+.PreFooter{
+    margin: 5vmax 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: white;
+    padding: 1vmax;
+    padding-bottom: 0;
+
+    >div{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        color: rgba(66, 66, 66, 0.829);
+        cursor: pointer;
+    }
+    >div:hover svg{
+        fill: rgb(34, 34, 34);
+    }
+    >div:hover p{
+        color: rgb(19, 18, 18);
+    }
+    
+}
+.PreFooter svg{
+    transform: scale(2) translateY(-0.2vmax);
+    fill: rgba(37, 37, 37, 0.322);
+    margin: 2vmax;
+}
+
+.PreFooter2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: 150px;
+
+    >div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        >p{
+            color: rgba(0, 0, 0, 0.842);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 18vmax;
+            margin: 0%;
+        }
+
+        >span{
+            color: rgba(51, 51, 51, 0.842);
+            width: 18vmax;
+            font-size: 1vmax;
+        }
+
+        >div >input{
+            border: none;
+            outline: none;
+            padding: 0.5vmax 1vmax;
+            background-color: white;
+            font-size: 1vmax;
+            width: 20.4vmax;
+        }
+
+        >div >button{
+            border: none;
+            padding: 0.5vmax;
+            background-color: white;
+            outline: none;
+            
+            >svg{
+                fill: rgba(69, 69, 69, 0.842);
+            }
+        }
+
+        >div{
+            border: 1px solid rgba(126, 126, 126, 0.493);
+        }
+    }
+
+    >div:nth-child(2) >span{
+        width: 22vmax;
+    }
+
+    >div:nth-child(3){
+        justify-content: center;
+        align-items: flex-end;
+
+        >p{
+            width: 14vmax;
+        }
+        >span{
+            width: 14vmax;
+        }
+    }
+
+    >div:nth-child(4){
+        flex-direction: row;
+
+        >svg{
+            cursor: pointer;
+            margin: 1vmax;
+            fill: rgba(138, 138, 138, 0.705);
+        }
+        >svg:hover{
+             fill: rgb(94, 94, 94);
+        }
+    }
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
+    padding: 4.5vmax;
+    background-color: rgb(37, 37, 37);
+    color: rgb(197, 197, 197);
+
+    >div{
+        margin: 1vmax;
+        display: flex;
+        flex-direction: column;
+
+        >a{
+            color: rgb(197, 197, 197);
+            font-size: 1vmax;
+            text-decoration: none;
+            margin: 0.6vmax 0;
+        }
+        >a:hover{
+            color: white;
+        }
+    }
+
+    >div:nth-child(2){
+        display: block;
+
+        >a{
+            display: inline-block;
+        }
+    }
+
+    >div:last-child{
+
+        >div{
+            width: 45%;
+            margin: 1vmax 0;
+            font-size: 0.8vmax;
+        }
+
+        >button{
+            width: 50%;
+            border: 1px solid white;
+            background-color: rgb(37, 37, 37);
+            color: white;
+            padding: 0.6vmax 0;
+            font-size: 0.98vmax;
+            font-weight: 100;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            transition: all 0.5s;
+        }
+        >button:hover{
+            background-color: rgb(248, 245, 245);
+            color: rgb(37, 37, 37);
+        }
+        
+    }
+}
+
+.footerBorder{
+    background-color: rgb(37, 37, 37);
+    color: white;
+
+    >div{
+        border-top: 1px solid rgba(197, 197, 197, 0.185);
+        color: rgb(197, 197, 197);
+        width: 90vw;
+        margin: auto;
+        padding: 2vmax;
+        font-size: 0.98vmax;
+    }
+}

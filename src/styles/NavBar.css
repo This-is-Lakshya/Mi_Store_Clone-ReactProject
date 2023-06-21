@@ -1,0 +1,60 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1vmax;
+    border-bottom: 1px solid rgba(43, 43, 43, 0.137);
+    background-color: white;
+    z-index: 1000;
+}
+
+.navLinks{
+    color: rgb(59, 59, 59);
+    text-decoration: none;
+    margin: 1vmax 1.2vmax;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1.1vmax;
+}
+
+.navLinks:hover{
+    text-decoration: none;
+    color: orangered;
+}
+
+.logo{
+    background-color: orangered;
+    width: 60px;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    right: 2vmax;
+
+    >a >img{
+        transform: translateX(-71px);
+    }
+}
+#logoImage:hover{
+    transition: all 0.2s;
+    transform: translateX(-15px);
+}
+
+.searchbox{
+    position: relative;
+    left: 5vmax;
+
+    >input{
+        border: none;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.76);
+        color: rgb(61, 61, 61);
+        width: 15vmax;
+        font-size: 1.1vmax;
+        outline: none;
+    }
+
+    >svg{
+        fill: rgb(61, 61, 61);
+    }
+}
